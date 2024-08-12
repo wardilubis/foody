@@ -1,5 +1,3 @@
-# comment/views.py
-
 from rest_framework import viewsets, permissions
 from .models import Comment
 from .serializers import CommentSerializer

@@ -1,5 +1,3 @@
-# user/views.py
-
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from rest_framework.response import Response
@@ -68,7 +66,6 @@ def login(request):
 @permission_classes([IsAuthenticated])
 def logout(request):
     try:
-        # Hapus token autentikasi untuk logout
         request.user.auth_token.delete()
         return Response({'detail': 'Logout successful'}, status=status.HTTP_200_OK)
     except (AttributeError, Token.DoesNotExist):

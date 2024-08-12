@@ -1,5 +1,3 @@
-# user/serializers.py
-
 from django.contrib.auth.models import User
 from rest_framework import serializers
 from .models import EmailVerification
@@ -17,7 +15,6 @@ class UserSerializer(serializers.ModelSerializer):
             email=validated_data['email'],
             password=validated_data['password']
         )
-        # Generate a 6-digit verification code
         code = random.randint(100000, 999999)
         EmailVerification.objects.create(user=user, code=str(code))
         print(f'Verification code sent to {user.email}: {code}')
