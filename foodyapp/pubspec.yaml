@@ -1,4 +1,4 @@
-name: foodyapp
+name: latapi_app
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -30,17 +30,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.1.0
-  equatable: ^2.0.5
-  dio: ^5.1.1
-  get_it: ^7.6.0
-  json_annotation: ^4.8.1
-  dartz: ^0.10.1
-  shared_preferences: ^2.1.0
-  formz: ^0.7.0
-  flutter_lints: ^4.0.0
-  flutter_localizations:
-    sdk: flutter
+  http: ^1.2.2
+  shared_preferences: ^2.3.1
+  animated_text_kit: ^4.2.1
+  image_picker: ^0.8.7+4
+  intl: ^0.17.0
+
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -50,19 +45,31 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.10.0"
+  flutter_native_splash: ^2.0.7
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  build_runner: ^2.3.3
-  json_serializable: ^6.7.1
+  flutter_lints: ^3.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
-# The following section is specific to Flutter packages.
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/foody-icon.jpg"  # Path ke ikon JPG Anda
+  adaptive_icon_background: "#ffffff"
+
+flutter_native_splash:
+  color: "#ffffff" # Warna latar belakang splash screen
+  image: assets/foody-screen.png # Path gambar splash screen
+  android: true
+  ios: true
+
 flutter:
 
   # The following line ensures that the Material Icons font is

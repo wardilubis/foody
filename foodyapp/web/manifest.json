@@ -1,6 +1,6 @@
 {
-    "name": "foodyapp",
-    "short_name": "foodyapp",
+    "name": "latapi_app",
+    "short_name": "latapi_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

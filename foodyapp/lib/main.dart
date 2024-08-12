@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'injection_container.dart' as di;
-import 'features/authentication/presentation/pages/registration_page.dart';
+import 'login_page.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await di.init();
+void main() {
   runApp(MyApp());
 }
 
@@ -16,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: RegistrationPage(),
+      home: LoginPage(),
     );
   }
 }

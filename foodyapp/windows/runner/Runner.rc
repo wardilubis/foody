@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "foodyapp" "\0"
+            VALUE "FileDescription", "latapi_app" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "foodyapp" "\0"
+            VALUE "InternalName", "latapi_app" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "foodyapp.exe" "\0"
-            VALUE "ProductName", "foodyapp" "\0"
+            VALUE "OriginalFilename", "latapi_app.exe" "\0"
+            VALUE "ProductName", "latapi_app" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

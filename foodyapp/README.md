@@ -1,4 +1,4 @@
-# foodyapp
+# latapi_app
 
 A new Flutter project.
 
